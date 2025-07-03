@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: ProductServiceMongoDb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - product-net
+
+  productservice-api:
+    build:
+      context: .
+      dockerfile: ProductService.API/Dockerfile
+    ports:
+      - "5181:80"
+    depends_on:
+      - mongodb
+    environment:
+      - ConnectionStrings__MongoDb=mongodb://mongodb:27017/ProductDb
+      - JwtSettings__SecretKey=super_secret_key_12345agvndjdnkjfn_218u3981328321_jgjirrjgmvnjf
+      - JwtSettings__Issuer=ECommerce.Identity
+      - JwtSettings__Audience=ECommerce.User
+      - ASPNETCORE_URLS=http://+:80
+    volumes:
+      - ./ProductService.API/Logs:/app/Logs
+    networks:
+      - product-net
+
+volumes:
+  mongo-data:
+
+networks:
+  product-net:
