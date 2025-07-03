@@ -120,3 +120,4 @@ C:\Users\alperyusuf.dursun\OneDrive - Aydinli\Masaüstü\RecentProjects\ECommerc
 C:\Users\alperyusuf.dursun\OneDrive - Aydinli\Masaüstü\RecentProjects\ECommerceMicroservice\src\Services\ProductService\ProductService.Tests\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
 C:\Users\alperyusuf.dursun\OneDrive - Aydinli\Masaüstü\RecentProjects\ECommerceMicroservice\src\Services\ProductService\ProductService.Tests\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\alperyusuf.dursun\OneDrive - Aydinli\Masaüstü\RecentProjects\ECommerceMicroservice\src\Services\ProductService\ProductService.Tests\bin\Debug\net9.0\Serilog.dll
+C:\Users\alperyusuf.dursun\OneDrive - Aydinli\Masaüstü\RecentProjects\ECommerceMicroservice\src\Services\ProductService\ProductService.Tests\obj\Debug\net9.0\ProductService.Tests.sourcelink.json
