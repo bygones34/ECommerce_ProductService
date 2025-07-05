@@ -49,36 +49,6 @@ A lightweight .NET 9 microservice for managing product data in an e-commerce sys
 
 ---
 
-### 🧩 Project Structure
-
-ProductService/
-│
-├── ProductService.API/ # Web API entrypoint
-│ ├── Controllers/
-│ ├── Middlewares/
-│ ├── Program.cs
-│ └── appsettings.json
-│
-├── ProductService.Application/ # Business logic, DTOs, Validators
-│ ├── DTOs/
-│ ├── Interfaces/
-│ ├── Services/
-│ └── Validators/
-│
-├── ProductService.Domain/ # Domain entities
-│ └── Entities/
-│
-├── ProductService.Infrastructure/ # MongoDB access, repositories
-│ └── Repositories/
-│
-├── ProductService.Tests/ # Unit test project
-│ └── Services/
-│
-├── docker-compose.yml # Docker configuration
-└── README.md
-
----
-
 ### 🧪 How to Test
 
 > Tests are coded using `xUnit`, `Moq` ve `FluentAssertions`.
